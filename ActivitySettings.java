@@ -1,4 +1,4 @@
-package ancientlore.squash;
+package com.ancientlore.squash;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -33,7 +33,7 @@ public class ActivitySettings extends Activity implements OnClickListener {
         racketSB.setOnClickListener(this);
         accelCB = (RadioButton) findViewById(R.id.radioButtonAccelerometer);
 
-        ballSB.setProgress(_lm.getBall().getSpeed());
+        ballSB.setProgress(_lm.getBall().getSpeedX());
         racketSB.setProgress(_lm.getRacket().getSpeed());
     }
 
@@ -43,8 +43,8 @@ public class ActivitySettings extends Activity implements OnClickListener {
             case R.id.buttonSettingsApply:
                 ManagerGame _gm = ManagerGame.getInstance();
                 _gm.setAccelerometerOn(accelCB.isChecked());
-                _lm.getBall().setSpeedX(ballSB.getProgress() / 3);
-                _lm.getBall().setSpeedY(ballSB.getProgress() * 2 / 3);
+                _lm.getBall().setSpeedX((int)(ballSB.getProgress() * 2.5f));
+                _lm.getBall().setSpeedY(ballSB.getProgress());
                 _lm.getRacket().setSpeed(racketSB.getProgress());
                 NavUtils.navigateUpFromSameTask(this);
                 break;

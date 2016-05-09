@@ -1,4 +1,4 @@
-package ancientlore.squash;
+package com.ancientlore.squash;
 
 import android.graphics.Rect;
 
@@ -8,7 +8,7 @@ class GORacket extends GameObject {
 
     GORacket(int displayX, int displayY){
         state= GOStateHorizontal.STOP;
-        speed=displayX/64;
+        speed=displayX/30;
 
         int newWidth = displayX/4;
         int newHeight = newWidth/4;

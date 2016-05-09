@@ -1,4 +1,4 @@
-package ancientlore.squash;
+package com.ancientlore.squash;
 
 class ManagerGame {
     private static volatile ManagerGame instance=null;

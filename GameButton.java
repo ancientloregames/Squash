@@ -1,4 +1,4 @@
-package ancientlore.squash;
+package com.ancientlore.squash;
 
 import android.graphics.Bitmap;
 import android.graphics.Point;

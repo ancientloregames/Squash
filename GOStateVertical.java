@@ -1,4 +1,4 @@
-package ancientlore.squash;
+package com.ancientlore.squash;
 
  enum GOStateVertical {
      UP,

@@ -1,4 +1,4 @@
-package ancientlore.squash;
+package com.ancientlore.squash;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -33,6 +33,7 @@ public class ActivityMenu extends Activity implements View.OnClickListener {
                 _gm.reset();
                 ManagerLevel _lm = ManagerLevel.getInstance();
                 _lm.load();
+                NavUtils.navigateUpFromSameTask(this);
                 break;
             case R.id.buttonMenuSettings:
                 Intent i=new Intent(this,ActivitySettings.class);

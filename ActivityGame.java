@@ -1,4 +1,4 @@
-package ancientlore.squash;
+package com.ancientlore.squash;
 
 import android.app.Activity;
 import android.content.Context;

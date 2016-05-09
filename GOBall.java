@@ -1,4 +1,4 @@
-package ancientlore.squash;
+package com.ancientlore.squash;
 
 import android.graphics.Rect;
 
@@ -15,8 +15,8 @@ class GOBall extends GameObject {
         Stop();
         stateX=GOStateHorizontal.LEFT;
         stateY=GOStateVertical.DOWN;
-        speedX=displayX/48;
-        speedY=displayY/128;
+        speedX=displayX/30;
+        speedY=displayY/75;
         velocity=0;
 
         int newSize = displayX/24;
@@ -26,20 +26,20 @@ class GOBall extends GameObject {
                 displayX/2+newSize/2,displayY/2+ display0+newSize/2));
     }
     void moveLeft(){
-        getRect().left -= getSpeedX();
-        getRect().right -= getSpeedX();
+        getRect().left -= getExactSpeedX();
+        getRect().right -= getExactSpeedX();
     }
     void moveRight(){
-        getRect().left += getSpeedX();
-        getRect().right += getSpeedX();
+        getRect().left += getExactSpeedX();
+        getRect().right += getExactSpeedX();
     }
     void moveUp(){
-        getRect().top -= getSpeedY();
-        getRect().bottom -= getSpeedY();
+        getRect().top -= getExactSpeedY();
+        getRect().bottom -= getExactSpeedY();
     }
     void moveDown(){
-        getRect().top += getSpeedY();
-        getRect().bottom += getSpeedY();
+        getRect().top += getExactSpeedY();
+        getRect().bottom += getExactSpeedY();
     }
 
     boolean isBoosted(){return boosted;}
@@ -54,8 +54,8 @@ class GOBall extends GameObject {
     GOStateVertical getStateY() {return stateY;}
 
 
-    private int getSpeedX() {return speedX+velocity;}
-    private int getSpeedY() {
+    private int getExactSpeedX() {return speedX+velocity;}
+    private int getExactSpeedY() {
         return speedY+velocity;
     }
     void setSpeedY(int speedY) {
@@ -65,6 +65,7 @@ class GOBall extends GameObject {
         this.speedX = speedX;
     }
     int getSpeed(){return speedX+speedY;}
+    int getSpeedX(){return speedX;}
     void setBoost(int val){velocity=val;boosted=true;}
     void slowdown(){
         if (velocity>0) velocity--;

@@ -1,4 +1,4 @@
-package ancientlore.squash;
+package com.ancientlore.squash;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -59,7 +59,7 @@ class ManagerInput {
     }
     void handleAccelerometerInput(SensorEvent se, ManagerLevel lm){
         if (se.values[0] != accXPrevPos){
-            if (se.values[0]-10 > accXPrevPos)
+            if (se.values[0] > accXPrevPos)
                 lm.getRacket().setState(GOStateHorizontal.LEFT);
             else
                 lm.getRacket().setState(GOStateHorizontal.RIGHT);
