@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_game">Новая игра</string>
+    <string name="play">Играть!</string>
+    <string name="quit">Выйти</string>
+    <string name="resume">Продолжить</string>
+    <string name="settings">Настройки</string>
+    <string name="squash">Сквош</string>
+    <string name="tutorial">Обучение</string>
+    <string name="ingameScore">Счёт</string>
+    <string name="menuMainBestScore">Рекорд:</string>
+    <string name="settings_button_apply">Применить</string>
+    <string name="settings_label_ball_speed">Скорость шарика:</string>
+    <string name="settings_label_input_mode">Способ ввода:</string>
+    <string name="settings_label_racket_speed">Скорость ракетки:</string>
+    <string name="settings_rb_accelerometer">Акселерометр</string>
+    <string name="settings_rb_touch">Прикосновение</string>
+    <string name="ingame_life">Жизни</string>
+    <string name="ingame_tut_pause">Пауза</string>
+    <string name="ingame_tut_line_1">Держите палец слева или справа от ракетки,чтобы</string>
+    <string name="ingame_tut_line_2">ее переместить. Вы можете поменять способ ввода,</string>
+    <string name="ingame_tut_line_3">скорость шарика и ракетки в Настройках.</string>
+    <string name="ingame_tut_line_end">[Нажмите на экран, для начала.]</string>
+</resources>

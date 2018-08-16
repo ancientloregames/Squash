@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name" translatable="false">AL Squash</string>
+    <string name="play">Play!</string>
+    <string name="gamelogo" translatable="false">GameLogo</string>
+    <string name="squash">Squash</string>
+    <string name="resume">Resume</string>
+    <string name="new_game">New Game</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="settings">Settings</string>
+    <string name="quit">Quit</string>
+    <string name="ingameScore">Score</string>
+    <string name="menuMainBestScore">HiScore:</string>
+    <string name="settings_label_input_mode">Input Mode:</string>
+    <string name="settings_rb_touch">Touch</string>
+    <string name="settings_rb_accelerometer">Accelerometer</string>
+    <string name="settings_label_ball_speed">Ball speed:</string>
+    <string name="settings_label_racket_speed">Racket speed:</string>
+    <string name="settings_button_apply">Apply</string>
+    <string name="main_label_hiscore" translatable="false">0</string>
+    <string name="ingame_life">Life</string>
+    <string name="ingame_tut_pause">Pause</string>
+    <string name="ingame_tut_line_1">Hold finger left or right side of the racket, to move it.</string>
+    <string name="ingame_tut_line_2">You can change input type in Settings.</string>
+    <string name="ingame_tut_line_3">Also, you can change racket and ball speed there.</string>
+    <string name="ingame_tut_line_end">[Tap on screen, to start game]</string>
+</resources>

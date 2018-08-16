@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ActivitySettings">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/settings_label_input_mode"
+        android:id="@+id/textViewInput"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupInputMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/buttonSettingsApply"
+        android:layout_alignEnd="@+id/buttonSettingsApply"
+        android:layout_below="@+id/textViewInput">
+            <RadioButton
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_rb_touch"
+                android:id="@+id/radioButtonTouch"
+                android:layout_alignParentStart="true"
+                android:checked="true" />
+
+            <RadioButton
+                android:layout_width="159dp"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_rb_accelerometer"
+                android:id="@+id/radioButtonAccelerometer"
+                android:layout_alignParentStart="true"
+                android:checked="false" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/settings_label_ball_speed"
+        android:id="@+id/textViewBallSpeed"
+        android:layout_below="@+id/seekBarRacketSpeed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_button_apply"
+        android:id="@+id/buttonSettingsApply"
+        android:layout_below="@+id/seekBarBallSpeed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textViewRacketSpeed"
+        android:layout_alignEnd="@+id/textViewRacketSpeed" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarRacketSpeed"
+        android:max="100"
+        android:progress="1"
+        android:indeterminate="false"
+        android:layout_below="@+id/textViewRacketSpeed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/buttonSettingsApply"
+        android:layout_alignEnd="@+id/buttonSettingsApply" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/settings_label_racket_speed"
+        android:id="@+id/textViewRacketSpeed"
+        android:layout_below="@+id/radioGroupInputMode"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarBallSpeed"
+        android:max="100"
+        android:progress="1"
+        android:indeterminate="false"
+        android:layout_below="@+id/textViewBallSpeed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/seekBarRacketSpeed"
+        android:layout_alignEnd="@+id/seekBarRacketSpeed" />
+
+</RelativeLayout>
